@@ -1,0 +1,2 @@
+; dlltool --base-file C:\Users\PC34\AppData\Local\Temp\cca02492.base --output-exp ICECLIMB.exp --dllname ICECLIMB.dll --output-def libICECLIMB.def --exclude-symbol=DllMainCRTStartup --def C:\Users\PC34\AppData\Local\Temp\cca02492.def
+EXPORTS
