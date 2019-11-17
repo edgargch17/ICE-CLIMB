@@ -27,7 +27,7 @@ public class Servidor {
             server = new ServerSocket(puerto);
             socket = new Socket();
            
-            String mensaje="";
+            String mensaje=" ";
             String mensajeComparacion = "cerrar Server";
             
             while(mensaje.compareTo(mensajeComparacion)!=1){
