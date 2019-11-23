@@ -32,13 +32,22 @@ public class Servidor {
             
             while(mensaje.compareTo(mensajeComparacion)!=1){
                 socket = server.accept();
-                entrada = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-                mensaje = entrada.readLine();
                 
+                entrada = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+               
+                mensaje = entrada.readLine();
+
                 if (mensaje.compareTo(mensajeComparacion)==1){
                     System.out.println("Palabra encontrada: "+mensaje);
                 }
                 System.out.println("Palabra cliente: "+mensaje);
+                System.out.println("hola"+mensaje);
+                int m=0;
+                //for(int i=0;i<mensaje.length();i++){
+                    //System.out.println("jola");
+                  //  m++;
+                //}
+                
                 /*Mensaje que le envia al cliente*/
                 salida = new DataOutputStream(socket.getOutputStream());
                 salida.writeUTF("//////////////////////Hola soy el Servidor de Java");
