@@ -21,12 +21,18 @@ int respuesta;
 
 int main()
 {
-	//enviarMSG("{Crear juego,true} \n"); //le devulve un boolean
-	//enviarMSG("{Agregar jugador,Popo} \n"); //Le devuelve un boolean
-	//enviarMSG("{Agregar jugador,Nana} \n"); //Le devuelve un boolean
+	enviarMSG("{Crear juego,true} \n"); //le devulve un boolean
+	enviarMSG("{Agregar jugador,Popo} \n"); //Le devuelve un boolean
+	enviarMSG("{Agregar jugador,Nana} \n"); //Le devuelve un boolean
 	enviarMSG("{Eliminar bloque,Popo}/2-03; \n"); //4-20, 4(fila), 20(columna)
-	//enviarMSG("{Hielo,Popo} \n"); //Le devuelve una vida menos
-	//enviarMSG("{Restar vida,Popo}; \n"); //Le devuelve una vida menos
+	enviarMSG("{Hielo,Popo}/4-15; \n"); //Le devuelve una vida menos
+	enviarMSG("{Restar vida,Popo}; \n"); //Le devuelve una vida menos
+	enviarMSG("{Enemigo eliminado,Popo}/yeti; \n"); //Le resta una vida (Yetis,Aves);
+	enviarMSG("{Enemigo eliminado,Popo}/ave; \n"); //Le resta una vida (Yetis,Aves);
+	enviarMSG("{Fruta recolectada,Popo}/naranja; \n"); // (naranjas 100)
+	enviarMSG("{Fruta recolectada,Popo}/banano; \n"); // (bananos 200)
+	enviarMSG("{Fruta recolectada,Popo}/berenjena; \n"); // (Berenjenas 300)
+	enviarMSG("{Fruta recolectada,Popo}/lechuga; \n"); // (Lechugas 400)
 
 }
 
